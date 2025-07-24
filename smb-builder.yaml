@@ -154,7 +154,7 @@ Resources:
                               continue
                           
                           # Check if this is the FAQ_Bank.docx file
-                          if file_path.endswith('FAQ_Bank.docx') or file_path.endswith('FAQ/FAQ_Bank.docx'):
+                          if file_path.endswith('FAQ_Bank.docx') or file_path.endswith('deployment/FAQ/FAQ_Bank.docx'):
                               if faq_bucket_name:
                                   # Upload to FAQ bucket root
                                   logger.info(f"Uploading FAQ_Bank.docx to {faq_bucket_name}")
@@ -985,7 +985,7 @@ Resources:
       ServiceToken: !GetAtt ContactFlowDeploymentFunction.Arn
       BucketName: !Ref SourceFilesBucket
       InstanceId: !Ref ConnectInstance
-      Prefix: "contactflows/"
+      Prefix: "deployment/contactflows/"
   #===== SECTION 5: VIEWS DEPLOYMENT RESOURCES =====
   
   # IAM Role for Views Deployment
