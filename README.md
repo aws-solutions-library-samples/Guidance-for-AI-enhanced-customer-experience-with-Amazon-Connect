@@ -17,7 +17,7 @@ The architecture for this Amazon Connect solution consists of the following key 
 
 NOTE: The solution is designed to be deployed in regions where Amazon Connect and Amazon Q services are available. Please verify service availability in your preferred region before deployment. https://docs.aws.amazon.com/connect/latest/adminguide/regions.html 
 
- ![image](https://github.com/user-attachments/assets/9f39e42a-0881-4c4d-a620-f3f30767c609)
+ ![image](images/8.jpeg)
 
 
 
