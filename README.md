@@ -196,10 +196,9 @@ The deployment process consists of several key steps that must be performed in o
     - Name: Enter a name of your choice
     - In the Chat contact flow, select the -inboindFlow-_20250508_222550 flow from the drop down.
     - Select the same flow for the Web calling contact flow
-
-![image](images/5.jpeg) 
-
     - Click Save and continue
+    ![image](images/5.jpeg) 
+
     
 3.	On the Customise widget page, update the Define widget access button styles as follows:
     - Start chat icon background color: 0f1e5a
@@ -259,11 +258,11 @@ You can access the deployed solution through the static webpage hosted on CloudF
 2.	Select the stack name you created in step 3 of the Deployment Guide, CloudFormation section.
 3.	Click on the Outputs tab, click on the WebsiteURL Key in the value column.  
 
- ![image](https://github.com/user-attachments/assets/b93cf0eb-2ac4-4186-8d3a-002903f973fe)
+ ![image](images/20.jpeg) 
 
 4.	This is a test webpage of Any Business, select the test chat widget on the bottom right to start a chat. 
 
-![image](https://github.com/user-attachments/assets/38b039e4-c060-440d-a35f-30bfab2ff9d1)
+ ![image](images/21.jpeg) 
 
 5.	Customers can submit questions for self-service support. The FAQBucket includes a Word document containing frequently asked questions, which will be used as a reference for providing answers. For instructions on how to upload your own FAQ document, please see the next section, “Change FAQ document.”
     Example questions
@@ -272,18 +271,18 @@ You can access the deployed solution through the static webpage hosted on CloudF
     -	How can I contact support?
     -	Do you have a loyalty program?
 
-![image](https://github.com/user-attachments/assets/34d1dbf6-d6c0-49e0-a3e2-2ef0d1e56ea9)
+ ![image](images/22.jpeg) 
 
 _Note: Amazon Q is a generative AI-powered assistant that enables users to ask questions in natural language, without needing to match the exact wording found in company documents. If a user's question is related to information available in connected data sources, Amazon Q will understand the intent, identify relevant content, and provide an appropriate answer-even if the question is phrased differently than in the original document. For instance, if a document contains information about "What is your return and exchange policy?" and a customer asks, "I got my package and I want to return it," Amazon Q will recognize the connection and deliver the relevant answer. If the question is unrelated to any available information, Amazon Q will simply respond that it does not have an answer._
 
 6.	At any stage the agent can say “speak to an agent” to be transferred to an agent via chat.
 7.	Log the agent into Amazon Connect and set status to ready to accept the chat.
 
-![image](https://github.com/user-attachments/assets/6603219c-26ba-4ae3-8c9f-98856312cf87)
+ ![image](images/23.jpeg) 
 
 8.	Customers can move to voice > video and screenshare by select start call and enabling their camera.
 
-![image](https://github.com/user-attachments/assets/540fa064-ad00-446a-818a-00ead894fc9f)
+ ![image](images/24.jpeg) 
 
 
 ### How to update the FAQ document with your own data
@@ -291,11 +290,11 @@ _Note: Amazon Q is a generative AI-powered assistant that enables users to ask q
 2.	Navigate to CloudFormation.
 3.	Select the stack name > Outputs and copy the FAQBucketName
 
-![image](https://github.com/user-attachments/assets/8867e76c-cca3-413b-a3bf-24eef22c76de)
+ ![image](images/25.jpeg) 
 
 4.	Navigate to S3 and search for the bucket name.
 
- ![image](https://github.com/user-attachments/assets/fe0efca1-315c-429f-8db2-99619dc3b8b8)
+ ![image](images/26.jpeg) 
 
 5.	The bucket will contain a single file. Please delete this file and upload your own document containing FAQ questions and answers.
     Note: Your document must meet the following requirements:
