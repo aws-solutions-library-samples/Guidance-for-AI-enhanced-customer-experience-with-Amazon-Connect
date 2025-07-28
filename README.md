@@ -109,9 +109,6 @@ The deployment process consists of several key steps that must be performed in o
 
 8.	Leave all selections as default and scroll down to Capabilities and select ‘I acknowledge that AWS CloudFormation might create IAM resources.’
 9.	Click Next
-
-    ![image](https://github.com/user-attachments/assets/2e2fe7a9-27d0-4740-851b-fcddf84e2a92)
-
 10.	Leave all sections as is, scroll down to bottom of page and select Submit.
  	Your CloudFormation template will start deploying with status ‘CREATE_IN_PROGRESS.  This build process will take a 10-15minutes to deploy.
 11.	When the CloudFormation is ‘CREATE_COMPLETE’ navigate to the Outputs tab and note down the FAQBucket, and S3Bucket names and the WebsiteURL.
@@ -119,16 +116,10 @@ The deployment process consists of several key steps that must be performed in o
 ### Set up Amazon Q Knowledge Base
 
 1.	In the menu bar of the console, type in Amazon Connect and click Amazon Connect from the Services menu to navigate to the Amazon Connect AWS console.
-
-![image](https://github.com/user-attachments/assets/42c259af-ce67-4580-9a25-82096c16fdbb)
-
 2.	In the Amazon Connect console, click on the Instance alias name that was created during the deployment.
-
- ![image](https://github.com/user-attachments/assets/755af85e-00a4-446c-937c-526391063d51)
-
 3.	In the left-hand menu, select Amazon Q.
 
- ![image](https://github.com/user-attachments/assets/2db2bf20-2d26-4323-9654-e80ed2371a03)
+ ![image](images/11.jpeg)
 
 4.	Select Add Domain > Create a new domain.  Enter a preferred domain name like “my-q-in-connect”.
 5.	Select Create an AWS KMS Key. This will navigate to the Customer-managed keys page of the Key Management Service (KMS) console.  
@@ -137,7 +128,7 @@ The deployment process consists of several key steps that must be performed in o
     - Key Usage – Encrypt and decrypt.  
     - Click Next.
 
-    ![image](https://github.com/user-attachments/assets/48d14ed0-7cd6-464f-8570-f49c9b6fd260)  
+    ![image](images/12.jpeg) 
 
     - On the Add labels page, enter a display name for your key in the Alias field and click Next.
     - On the Define key administrative permissions page, leave everything default and click Next.
@@ -145,24 +136,24 @@ The deployment process consists of several key steps that must be performed in o
     - On the Edit key policy page.  Use the toggle button on the right-hand corner and move to ‘Edit’.
     - Copy and paste the updated key policy configuration below into the key policy.  Note; make sure you include your account number in the configuration before pasting into the Key policy
   
-    ![image](https://github.com/user-attachments/assets/ebc0a5a2-3a2b-40b0-944b-6bcc9ef4109c)
+    ![image](images/18.jpeg) 
 
     - When the policy has been updated, click Next
-
-    ![image](https://github.com/user-attachments/assets/75aa85fd-c6a6-4ac3-9a56-e3d000776d1e)
-
     - On the Review page scroll to the bottom of the page then click Finish
 
 7.	Return to the AWS Amazon Connect console and the Amazon Q Add domain page.  Select the new KMS Key.  Click Add domain.
 8.	On the same Amazon Q page, click on ‘Add integration’
 
-![image](https://github.com/user-attachments/assets/942fa32d-e8c0-48af-8e35-7fd4e53ad8ff)
+![image](images/14.jpeg) 
 
 9.	On the Add integration page, choose Create a new integration, and under Source select S3.
 10.	Add an integration name of your choice.
 11.	Under Connection with S3, click the Browse S3 button and search the bucket name created in previous CloudFormation step 6.c (FAQBucket). Select bucket and click choose.
-12.	In the Encryption section, select the KMS Key you created previously.  
-13.	Click: Next > Add integration
+
+![image](images/15.jpeg) 
+  
+13.	In the Encryption section, select the KMS Key you created previously.  
+14.	Click: Next > Add integration
 
 
 ### Enable Lex Bot
@@ -170,7 +161,7 @@ The deployment process consists of several key steps that must be performed in o
 2.	On the left-hand menu, at the bottom, click ‘Flows’
 3.	Check both boxes under Amazon Lext Bots and click ‘Save’.  This provides the ability for the Lex bot to be created in the Amazon Connect Admin Console.
 
-![image](https://github.com/user-attachments/assets/5acd61e7-d20f-4a4a-b25a-30db54c7386d)
+![image](images/17.jpeg) 
 
 4.	Navigate back to the Overview section of your Amazon Connect Instance by clicking the Instance Name in the top left corner.
 5.	In the Access Information of the Account Overview, click on the Access URL link.
