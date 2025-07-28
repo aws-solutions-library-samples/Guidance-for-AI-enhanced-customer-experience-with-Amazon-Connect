@@ -170,44 +170,34 @@ The deployment process consists of several key steps that must be performed in o
 
 ### Configure Lex Bot
 1.	On the left-hand menu of the admin page, 
-
- ![image](https://github.com/user-attachments/assets/748a44fb-8d35-4b34-a5b7-26a19aded7bd)
-
 2.	Navigate to Routing > Flows > bots.
 3.	Select Create Bot > call the bot “MenuBot”, leave the Children’s Online Privacy Protection Act (COPPA) as default setting > Click Create.
-4.	Select Add language > English (US) 
-5.	In the Amazon Q in Connect intent section, Enable Amazon Q in Connect Intent. 
-6.	In the Enable Amazon Q in Connect intent pop-up window, select your bot from the drop down.  The bot’s name will start with arn:aws:wisdom.  Click Confirm.
-7.	Click Build language
- 
-![image](https://github.com/user-attachments/assets/ead97daf-2268-49fc-9c54-fe805344d150)
-
+5.	Select Add language > English (US).
+7.	In the Amazon Q in Connect intent section, Enable Amazon Q in Connect Intent.
+![image](images/1.jpeg) 
+9.	In the Enable Amazon Q in Connect intent pop-up window, select your bot from the drop down.  The bot’s name will start with arn:aws:wisdom.  Click Confirm.
+![image](images/2.jpeg) 
+11.	Click Build language
 
 ### Configure Contact Flow
 
 1.	From Amazon Connect UI navigate to Routing > Flows.
 2.	Select the -inboindFlow-_20250508_222550
-
-![image](https://github.com/user-attachments/assets/e8e3f064-05e6-4328-906e-2d19c081c00b)
-
 3.	When the contact flow is opened, follow the instructions of the Note cards to update the flow blocks.
 4.	Click Publish in the top right of the screen, you will see a ‘Flow published successfully!’ message in the top left of the screen confirming the change is complete.
-
- ![image](https://github.com/user-attachments/assets/f37dee85-6934-4c86-9be2-1310019f8e12)
 
 
 ### Configure Chat Widget
 
 1.	From Amazon Connect UI navigate to Channels > Communication widgets > Add widget
 
- ![image](https://github.com/user-attachments/assets/fc8fdce6-1420-4264-8871-8bb47c5cf23b)
 
 2.	Add the following details:
     - Name: Enter a name of your choice
     - In the Chat contact flow, select the -inboindFlow-_20250508_222550 flow from the drop down.
     - Select the same flow for the Web calling contact flow
 
-    ![image](https://github.com/user-attachments/assets/105655ca-2be5-470a-8149-26a88d84fdcf)
+![image](images/5.jpeg) 
 
     - Click Save and continue
     
@@ -223,7 +213,6 @@ The deployment process consists of several key steps that must be performed in o
     - Leave widget background color as default: ffffff
     - Leave the Logo URL blank
 
- ![image](https://github.com/user-attachments/assets/3f441b71-b0da-4270-970f-172194525cb9)
 
 5.	In the Chat view section, make the following changes:
     - Change the Typeface to Tahoma
@@ -233,20 +222,20 @@ The deployment process consists of several key steps that must be performed in o
     - Change the Agent chat bubble color, to 6fa3d9
     - Change the Customer chat bubble color to bd9a62
 
-    ![image](https://github.com/user-attachments/assets/28e1ec85-36fa-4005-a65a-eb064b9aac3d)
 
     - Click Save and continue
 
 6.	In the Domain & Security section make the following changes:
     - In the Add the required domains for the communication widget.  Paste the URL copied from the WebsiteURL CloudFormation stack
+  
+![image](images/19.jpeg) 
+
     - In the Add security for new communication widget requests, change the Would you prefer to do this? To ‘No’
     - Click Save and continue
 
- ![image](https://github.com/user-attachments/assets/0d50bb67-6821-4565-8764-284c906c45c8)
 
 7.	On the final review page, select ‘Copy Script’.  This will copy the Widget Script.
 
- ![image](https://github.com/user-attachments/assets/108db775-3015-4830-a435-aff757228785)
 
 
 ### Configure Webpage 
@@ -254,19 +243,14 @@ The deployment process consists of several key steps that must be performed in o
 1.	Login to your AWS account and navigate to S3.
 2.	Search for the S3Bucket name noted down in step 11 Section CloudFormation Deployment.
 3.	From the root folder, select the index.html file and click download.  
- 
-![image](https://github.com/user-attachments/assets/09c01224-400e-49ab-a3a9-4c5be67f8814)
-
 4.	Open the file using a text editor like Visual Code, delete lines 27 – 39.
 5.	Paste the Widget script into the same file starting at line 27
 
-![image](https://github.com/user-attachments/assets/9d213b0b-c144-42a9-959d-3cbcd4251bfe)
+![image](images/7.jpeg) 
 
 6.	Save the file as index.html to your local machine
 7.	Navigate back to the S3 bucket and add to new file updated file to the bucket.
 8.	Click Upload.  This will overwrite the existing .html file
-
- ![image](https://github.com/user-attachments/assets/79149c24-9ba4-4fd0-b207-692ebb22c1cd)
 
 
 ### Test your new self-service solution
