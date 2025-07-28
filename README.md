@@ -17,7 +17,7 @@ The architecture for this Amazon Connect solution consists of the following key 
 
 NOTE: The solution is designed to be deployed in regions where Amazon Connect and Amazon Q services are available. Please verify service availability in your preferred region before deployment. https://docs.aws.amazon.com/connect/latest/adminguide/regions.html 
 
- ![image](images/8.jpeg)
+ ![image](images/9.jpeg)
 
 
 
@@ -105,7 +105,7 @@ The deployment process consists of several key steps that must be performed in o
   
 7.	Click Next
    
- 	 ![image](https://github.com/user-attachments/assets/b0a20852-5af8-4f85-afde-a17292ff1255)
+ 	 ![image](images/10.jpeg)
 
 8.	Leave all selections as default and scroll down to Capabilities and select ‘I acknowledge that AWS CloudFormation might create IAM resources.’
 9.	Click Next
