@@ -99,6 +99,7 @@ The deployment process consists of several key steps that must be performed in o
 6.	Complete Stack details:
     - Enter a stack name of your choice.
     - AdminPassword (you can change this to a password of your choice, if you leave it as is, the password will be Admin123!.  Passwords must contain at least 8 characters with an uppercase letter, a      lowercase letter, and a number)
+    - AdminUsername (Username for the Connect admin user)
     - FAQBucketName – Enter a name of your choice.  This is the S3 bucket where your FAQ documents will be stored.
     - InstanceAlias – Enter a name of your choice. This will be the Amazon Connect Instance Name
     - S3BucketName – Enter a name of your choice. This will be the bucket used to store the static website
