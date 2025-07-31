@@ -155,6 +155,10 @@ The deployment process consists of several key steps that must be performed in o
   
 13.	In the Encryption section, select the KMS Key you created previously.  
 14.	Click: Next > Add integration
+15.	browse to the Cloudformation Outputs tab and locate the S3 bucket create for FAQBucketName
+    ![image](images/27.jpeg)
+16. Browse to the S3 bucket and isnide should be a file called FAQ.docx
+17. Download the file and re-upload it to the bucket. Don't change anything, this is to trigger a sync to QiC integeration just created.
 
 
 ### Enable Lex Bot
