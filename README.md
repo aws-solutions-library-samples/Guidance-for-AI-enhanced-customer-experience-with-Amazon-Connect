@@ -38,7 +38,7 @@ Amazon Connect pricing includes per minute charging for in-app and web calling a
 
 Example: If you handle 1,000 minutes of web calls and from within the United States per month, your costs would include; per-minute web-calling charges of $0.010, and inbound voice usage of $0.018.  [Detailed pricing varies by region](https://aws.amazon.com/connect/pricing/).
 
-*Prices shown here are an estimate calculated on 13th May 2025 for AWS us-east-1 Region. Please check the AWS Pricing Calculator for additional details.
+*Prices shown here are an estimate calculated on 13th May 2025 for AWS us-east-1 Region. Please check the Amazon Connect Pricing Page for additional details.
 
 
 ### Amazon Q in Connect
