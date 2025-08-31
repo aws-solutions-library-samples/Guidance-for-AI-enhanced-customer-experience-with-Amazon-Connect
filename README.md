@@ -172,17 +172,22 @@ The deployment process consists of several key steps that must be performed in o
 5.	In the Access Information of the Account Overview, click on the Access URL link.
 6.	This will take you to the Amazon Connect Admin console, use your username and password you entered when deploying your stack.  The default was username; Admin, Password, Admin123!
 
-
+### Enable Recording
+1.	Navigate back to the Amazon Connect console and the new instance name.
+2.	On the left-hand menu, at the bottom, click ‘Data Stroge’.
+3.	Select Edit on Call recordings.
+4.	Select Enable call recording > Enable call recording > name > Save.
+![image](images/28.jpeg) 
+   
 ### Configure Lex Bot
-1.	On the left-hand menu of the admin page, 
-2.	Navigate to Routing > Flows > bots.
-3.	Select Create Bot > call the bot “MenuBot”, leave the Children’s Online Privacy Protection Act (COPPA) as default setting > Click Create.
-5.	Select Add language > English (US).
-7.	In the Amazon Q in Connect intent section, Enable Amazon Q in Connect Intent.
+1.	On the left-hand menu of the admin page, navigate to Routing > Flows > bots.
+2.	Select Create Bot > call the bot “MenuBot”, leave the Children’s Online Privacy Protection Act (COPPA) as default setting > Click Create.
+3.	Select Add language > English (US).
+4.	In the Amazon Q in Connect intent section, Enable Amazon Q in Connect Intent.
 ![image](images/1.jpeg) 
-9.	In the Enable Amazon Q in Connect intent pop-up window, select your bot from the drop down.  The bot’s name will start with arn:aws:wisdom.  Click Confirm.
+5.	In the Enable Amazon Q in Connect intent pop-up window, select your bot from the drop down.  The bot’s name will start with arn:aws:wisdom.  Click Confirm.
 ![image](images/2.jpeg) 
-11.	Click Build language
+6.	Click Build language
 
 ### Configure Contact Flow
 
