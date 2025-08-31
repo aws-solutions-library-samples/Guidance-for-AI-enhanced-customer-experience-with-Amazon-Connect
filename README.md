@@ -176,8 +176,15 @@ The deployment process consists of several key steps that must be performed in o
 1.	Navigate back to the Amazon Connect console and the new instance name.
 2.	On the left-hand menu, at the bottom, click ‘Data Stroge’.
 3.	Select Edit on Call recordings.
-4.	Select Enable call recording > Enable call recording > name > Save.
-![image](images/28.jpeg) 
+4.	Select Enable call recording > Create a new S3 bucket (recommended)> name > Save.
+![image](images/28.jpeg)
+
+### Chat transcripts
+1.	Navigate back to the Amazon Connect console and the new instance name.
+2.	On the left-hand menu, at the bottom, click ‘Data Stroge’.
+3.	Select Edit on Chat transcripts.
+4.	Select Enable chat transcripts > Create a new S3 bucket (recommended) > name > Save.
+![image](images/29.jpeg) 
    
 ### Configure Lex Bot
 1.	On the left-hand menu of the admin page, navigate to Routing > Flows > bots.
