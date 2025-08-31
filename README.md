@@ -326,8 +326,10 @@ _Note: Amazon Q is a generative AI-powered assistant that enables users to ask q
 This guide provides step-by-step instructions to deploy an Amazon Connect self-service customer experience solution.   Upon completion you will have a GenAI chat bot with web calling capability, and an OMNI Channel contact centre.
 
 By following this implementation, you will have:
-1.	An Amazon Connect Instance built and configured in your AWS Account.  
-2.	A self-service chat bot leveraging Bedrock knowledge base to answer customer queries.
-3.	WebRTC calling/video capability to speak with an agent
-4.	A hosted Web App via AWS CloudFront to experience the deployed solution.
+1. Amazon Connect platform
+2. Self-service chatbot
+3. Omnichannel interaction management (Chat, Voice, Video, Screen Sharing)
+4. Agent assistant (Next Best Action)
+5. Speech analytics capabilities
+6. Automated post call summary
 
