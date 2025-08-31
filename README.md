@@ -328,6 +328,6 @@ This guide provides step-by-step instructions to deploy an Amazon Connect self-s
 By following this implementation, you will have:
 1.	An Amazon Connect Instance built and configured in your AWS Account.  
 2.	A self-service chat bot leveraging Bedrock knowledge base to answer customer queries.
-3.	A webRTC calling capability to speak with human agents
+3.	WebRTC calling/video capability to speak with an agent
 4.	A hosted Web App via AWS CloudFront to experience the deployed solution.
 
