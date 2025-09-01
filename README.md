@@ -301,7 +301,7 @@ _Note: Amazon Q is a generative AI-powered assistant that enables users to ask q
 
  ![image](images/24.jpeg) 
 
-9. After a call interaction agents will see a post call summary to automate an agents after call work.
+9. Agents will receive a post-call summary following each interaction to automate their after-call work.
 
  ![image](images/30.jpeg) 
 
@@ -322,8 +322,6 @@ _Note: Amazon Q is a generative AI-powered assistant that enables users to ask q
     - File size must be less than 1 MB
     - Only include text-remove any images, as Generative AI only processes text
 
-
- 
 ## Summary 
 
 This guide provides step-by-step instructions to deploy an Amazon Connect self-service customer experience solution.   Upon completion you will have a GenAI chat bot with web calling capability, and an OMNI Channel contact centre.
