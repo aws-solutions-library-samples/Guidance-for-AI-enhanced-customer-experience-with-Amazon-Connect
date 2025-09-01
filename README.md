@@ -301,6 +301,9 @@ _Note: Amazon Q is a generative AI-powered assistant that enables users to ask q
 
  ![image](images/24.jpeg) 
 
+9. After a call interaction agents will see a post call summary to automate an agents after call work.
+
+ ![image](images/30.jpeg) 
 
 ### How to update the FAQ document with your own data
 1.	Login to your AWS account were you deployed the CloudFormation template.
