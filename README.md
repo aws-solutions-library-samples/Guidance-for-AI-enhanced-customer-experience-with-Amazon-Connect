@@ -168,13 +168,10 @@ The deployment process consists of several key steps that must be performed in o
 
 ![image](images/17.jpeg) 
 
-4.	Navigate back to the Overview section of your Amazon Connect Instance by clicking the Instance Name in the top left corner.
-5.	In the Access Information of the Account Overview, click on the Access URL link.
-6.	This will take you to the Amazon Connect Admin console, use your username and password you entered when deploying your stack.  The default was username; Admin, Password, Admin123!
 
 ### Enable Recording
 1.	Navigate back to the Amazon Connect console and the new instance name.
-2.	On the left-hand menu, at the bottom, click ‘Data Stroge’.
+2.	On the left-hand menu, at the bottom, click ‘Data Storage’.
 3.	Select Edit on Call recordings.
 4.	Select Enable call recording > Create a new S3 bucket (recommended)> name > Save.
 ![image](images/28.jpeg)
@@ -184,7 +181,10 @@ The deployment process consists of several key steps that must be performed in o
 2.	On the left-hand menu, at the bottom, click ‘Data Stroge’.
 3.	Select Edit on Chat transcripts.
 4.	Select Enable chat transcripts > Create a new S3 bucket (recommended) > name > Save.
-![image](images/29.jpeg) 
+![image](images/29.jpeg)
+5.	Navigate back to the Overview section of your Amazon Connect Instance by clicking the Instance Name in the top left corner.
+6.	In the Access Information of the Account Overview, click on the Access URL link.
+7.	This will take you to the Amazon Connect Admin console, use your username and password you entered when deploying your stack.  The default was username; Admin, Password, Admin123!
    
 ### Configure Lex Bot
 1.	On the left-hand menu of the admin page, navigate to Routing > Flows > bots.
