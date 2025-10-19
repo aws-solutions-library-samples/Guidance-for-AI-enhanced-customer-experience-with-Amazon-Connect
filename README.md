@@ -1,11 +1,13 @@
-# Amazon Connect SMB Starter Kit
-
+# Guidance for AI enhanced customer experience with Amazon Connect
 
 ## Introduction
-This document provides an implementation guide for deploying a customer service contact centre solution powered by Amazon Connect and enhanced with Amazon Q's AI capabilities.   By following this guide, you will deploy a fully functional, customer experience solution that enables voice, chat, and messaging interactions. 
+This Guidance demonstrates how Amazon Connect can revolutionize your customer experience using Amazon Connect AI-powered automation and agent assistance. By implementing this solution, businesses can deliver 24/7 omnichannel support while significantly improving operational efficiency and customer experience. The integration enables natural, conversational customer interactions through generative AI, seamless escalation to human agents when needed, and empowers customer service representatives with real-time AI assistance. This AI-powered approach to customer service helps organizations reduce improve customer satisfaction, increase business growth, while optimizing operational costs and enabling support teams to focus on high-value interactions.
 
-This AWS SMB starter kit includes a CloudFormation template that simplifies the deployment process and demonstrates how Amazon Connect leverages generative AI to provide customer self-service capabilities. The solution is particularly valuable for small and medium-sized businesses seeking to implement enterprise-grade, AI-enhanced customer service capabilities with minimal configuration requirements.
+Deploy intelligent, ai-conversational support that services customer inquiries without human-agent intervention. Amazon Q in Connect leverages large language models to provide contextual responses from your knowledge base, improving customer self-service success rates.
 
+Enable seamless transitions from AI-powered self-service to human agents when needed. Customers maintain context as they move between chat, voice, video, or in-app channels, creating a cohesive support experience that improves customer experience.
+
+Automate and self-serve routine inquiries while directing complex issues to human agents. This approach, improves customer experience, reduces wait times, allows agents to focus on high-value interactions, and captures complete interaction history for continuous improvement of both AI and human-assisted support.
 
  
 ## Architecture overview
