@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: 'Amazon Connect with Customer Profiles and Static Website using CloudFront-hosted source files'
+Description: 'Amazon Connect with Customer Profiles and Static Website using CloudFront-hosted source files - SO9627'
 
 Parameters:
   # Website parameters
