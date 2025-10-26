@@ -21,6 +21,33 @@ NOTE: The solution is designed to be deployed in regions where Amazon Connect an
 
  ![image](images/9.jpeg)
 
+## Cost
+This bundle uses the following resources:
+
+### Amazon Connect
+Amazon Connect provides unlimited use of AI capabilities that power end-customer self-service, agent assistance, and supervisor experiences. It allows you to optimize every step of your customer journey without cost-driven compromises. Learn more [here](https://aws.amazon.com/connect/pricing/). Alternatively, you can continue buying Amazon Connect features [individually](https://aws.amazon.com/connect/pricing/#Amazon_Connect_with_individual_features). 
+
+You are responsible for the cost of the AWS services used while running this Guidance. The cost for running this Guidance with the default settings in the US East (N. Virginia) with unlimited AI is approximately $5,300 per month for 100,000 minutes of in-app calls and 50,000 chat messages per month with all calls analyzed to provide Conversational analytics & post contact summaries.  This guidance scenario also includes automated performance evaluations for 75 contact center agents.
+
+The following table provides a sample cost breakdown for deploying this Guidance with the default parameters in the US East (N. Virginia) Region for one month.
+
+| Channels | Conversational analytics & post-contact summaries | Screen Recording | Real-time agent assistance | End-customer self-service | Automated performance evaluations | Agent forecasting & scheduling | Pricing |
+|-----------|------------|------------|------------|------------|------------|------------|------------|
+| Voice (telephony, in-app and web, video)| X |  | X | X | X| | $0.048 per min (see note 1) | 
+| Chat | X |  | X | X | X| | $0.010 per message | 
+
+Notes:
+1. For Amazon Connect Voice, there are two charges associated with usage: voice service AI charges and a charge for the communication service i.e. in-app and web calling. In this chart, the voice service AI charge is $0.038, and you are separately charged for the in-app and web calling audio communication at a rate of $0.010 per minute, resulting in a charge of $0.048 per minute.
+ Pricing example:
+* Omnichannel Customer Service: Let’s assume your 75-agent contact center receives 100,000 voice minutes, and 50,000 chat messages per month. You want to enable conversational analytics, real-time agent-assist, and end-customer self-service chatbots:
+*    There is an Amazon Connect voice usage charge, based on end-customer call duration. At $0.038 per minute * 100,000 minutes = $3,800.
+*   The per minute in-app voice usage charge at $0.010 per minute * 100,000 minutes = $1,000. 
+*   There is an Amazon Connect chat usage charge, based on the total messages sent during the chat (including initial message when chat was started). At $0.01 per message * 50,000 chat messages = $500 per month.
+*   The monthly cost is $5,300 [plus applicable taxes, fees, and surcharges](https://aws.amazon.com/tax-help/telecommunications-services/). 
+
+
+You are responsible for the cost of the AWS services used while running this Guidance. The cost for running this Guidance with the default settings in the US East (N. Virginia) with unlimited AI is approximately $5,300 per month for 100,000 minutes of in-app calls and 50,000 chat messages per month with all calls analyzed to provide Conversational analytics & post contact summaries.  This guidance scenario also includes automated performance evaluations for 75 contact center agents.
+The following table provides a sample cost breakdown for deploying this Guidance with the default parameters in the US East (N. Virginia) Region for one month.
 
 
 ## Customer Journey
