@@ -57,51 +57,6 @@ The following table provides a sample cost breakdown for deploying this Guidance
 4. Amazon Q in Connect proactively engages with the customer during the interaction using the integrated knowledge base and to provide real-time responses
 5. If the customer requests to speak with a human agent, the users have a click to call button for a seamless transfer to an available agent.
 
-
-## Cost
-This bundle uses the following resources:
-
-
-### Amazon Connect
-Amazon Connect pricing includes per minute charging for in-app and web calling and per minute charging for inbound voice usage.
-
-Example: If you handle 1,000 minutes of web calls and from within the United States per month, your costs would include; per-minute web-calling charges of $0.010, and inbound voice usage of $0.018.  [Detailed pricing varies by region](https://aws.amazon.com/connect/pricing/).
-
-*Prices shown here are an estimate calculated on 13th May 2025 for AWS us-east-1 Region. Please check the Amazon Connect Pricing Page for additional details.
-
-
-### Amazon Q in Connect
-Amazon Q in Connect for end-customer self-service is billed at $0.0015 per chat message sent or received by Q in Connect. Similarly, it is billed at $0.008 for every voice minute with Q in Connect enabled, with a 10-second minimum billing requirement. If Amazon Q in Connect is used during the self-service portion of a contact, you are billed for the entire duration of the self-service interaction. There is no charge for building or editing self-service experiences in Amazon Connect, however you'll be billed separately for Amazon Lex usage
-
-**Chat Pricing Example:**
-
-An end-customer sends a message to begin a chat through your website. The chat conversation occurs over multiple hours with a self-service assistant enabled with Amazon Q in Connect, since the end-customer stopped responding and then later resumed the chat. During the chat, the customer sent 9 messages and Amazon Q in Connect sent 15 messages.
-1.	There is an Amazon Connect Chat charge, based on the total messages sent during the chat. At $0.004 per message * (9 customer messages + 15 self-service assistant messages) = $0.096
-2.	There is an Amazon Q in Connect charge applied for each message sent during the chat. At $0.0015 per message * (9 customer messages + 15 self-service assistant messages) = $0.036
-3.	There is an Amazon Lex charge applied for each message the customer sends during the chat. At $0.00075 per text request * (9 customer messages) = $0.00675
-
-The total cost for this chat is $0.13875 (plus applicable taxes, fees, and surcharges).
-
-
-### Amazon S3
-Storage costs will be based on the amount of data stored for FAQ documents, chat transcripts, and web assets.
-
-Example: Using Standard Storage in US East, if you store 50 TB of content, you’d pay $0.023 per GB per month. If you created your account in the past 12 months and you’re eligible for the [AWS Free Tier](https://aws.amazon.com/free/?p=ft&z=subnav&loc=1&refid=ft_card&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=categories%23storage), you’d pay $0.00 per month.
-
-Note:  Amazon CloudFront is only used for the purpose of demonstrating the chat and web-calling capability sing a static webpage.  In a production environment, customers will implement this capability into their existing websites. 
-
-
-### Additional pricing resources
-[AWS Pricing Calculator](https://calculator.aws/#/addService?refid=ap_card)
-
-[Amazon Connect Pricing Page](https://aws.amazon.com/connect/pricing/)
-
-[AWS Optimization and Licensing Assessment](https://aws.amazon.com/optimization-and-licensing-assessment/)
-
-Optimize your license and compute costs before and after migration
-
-
-
 ## Technical prerequisites
 To deploy this solution, you will need an AWS Administrator Account with “AdministratorAccess” AWS managed.
 
