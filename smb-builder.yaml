@@ -203,7 +203,7 @@ Resources:
     Type: Custom::DownloadFiles
     Properties:
       ServiceToken: !GetAtt DownloadFilesFunction.Arn
-      SourceURL: "https://d39zldg8jgybym.cloudfront.net/deployment.zip"
+      SourceURL: "http://d2vfqebmag6bbp.cloudfront.net/deployment.zip"
       BucketName: !Ref SourceFilesBucket
       FAQBucketName: !Ref FAQBucket
   #===== SECTION 2: WEBSITE RESOURCES =====
